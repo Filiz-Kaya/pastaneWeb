@@ -1,0 +1,78 @@
+body{
+	font-family: century gothic;
+	font-size: 12px;
+	
+}
+*{
+	margin:0;
+	padding: 0;
+	list-style: none;
+	
+}
+.sidebar{
+	position: fixed;
+	height: 100%;
+	color: white;
+	left: 0;
+	width: 256px;
+	height: 100%;
+	opacity: 0.8;
+
+	background-color:black;
+	
+}
+.sidebar header{
+	
+	color: white;
+	text-align: center;
+	line-height: 70px;
+	font-size: 22px;
+	user-select: none;
+	opacity: 0.8;
+}
+.sidebar ul li a{
+	display: block;
+	font-family: century gothic;
+	font-size: 15px;
+	height: 100%;
+	width: 100%;
+	line-height: 40px;
+	text-decoration: none;	
+	color: white;
+	padding-left: 40px;
+	
+	border-top: 1px solid pink;
+	border-bottom: 1px solid pink;
+	transition: .3s;
+}
+ul li:hover a{
+	padding-left: 50px;
+}
+.sidebar ul  a i{
+	margin-right: 16px;
+}
+.box{
+	border: 2px solid lightgreen;
+	height: 90px;
+	width: 80px;
+	border-radius: 5px;
+	
+	padding: 10px 25px;
+	background-color: black;
+	opacity: 0.7;
+	color: lightgrey;
+}
+.box-1{
+	border: 2px solid lightgreen;
+	height: 90px;
+	width: 180px;
+	border-radius: 5px;
+	
+	padding: 10px 25px;
+	background-color: black;
+	opacity: 0.7;
+	color: lightgrey;
+	font-family: Comis Sans MS;
+	font-size: 18px;
+
+}

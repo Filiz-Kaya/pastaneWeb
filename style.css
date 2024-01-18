@@ -1,0 +1,187 @@
+body{
+	background-image:url("resimler/macaroon.jpeg");
+	background-position:center;
+	background-size: 1540px 900px ;
+	background-repeat: no-repeat;
+	background-origin: border-box;
+	background-attachment: fixed;
+	font-family: century gothic;
+}
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+ul.menu{
+	background: black;
+}
+ul.menu >li{
+	float: left;
+	position: relative;
+	padding-left: 40px;
+	
+}
+ul.menu >li >a{ /*ilk li içerisindeki ilk a demek. Bunu yapmamızın sebebi ikinci ul'in bu cssleri okumaması gerekmekte.*/
+	display: block;
+	font-size: 14px;
+	color: #fff;
+	padding: 0 15px;
+	line-height: 50px;
+	border-right: 1px solid rgba(0,0,0,.1);
+	text-decoration: none;
+}
+ul.menu ul{
+	widht: 200px;
+	position:absolute;
+	background: black;
+	top: 30px;
+	left: 40px;
+	z-index:2;/*>> içeriğin üste çıkmasını sağlıyor. :). Eğer işe yaramıyorsa altta kalmasını istediğin dive z-index: 1; ver :)*/
+	padding: 10px;
+	opacity: 0;
+	transition: 250ms all;
+	visibility: hidden;
+	/*display: none;*/
+}
+ul.menu ul li{
+	position:  relative;
+
+	width: 165px;
+}
+ul.menu ul li a{
+	display: block;
+	padding: 7px 12px;
+	color: white;
+	width: 160px;
+	font-size: 14px;
+	text-decoration: none;
+}
+ul.menu >li ul ul{
+	top: 0;
+	left: 200px;
+	
+	width: 180px;
+
+}
+ul.menu >li:hover >ul{/*:(iki noktadan)dan sonra hover ile arasında boşluk olmaması gerekiyor.*/
+	opacity: 1;
+	visibility: visible;
+	
+	top: 50px;
+	
+	/*display: block;*/
+}
+ul.menu ul li:hover >ul{
+	opacity: 1;
+	visibility: visible;
+	left: 160px;
+}
+/*index.php sayfasında yer alan ikonların şekli için yazılmış kodlar.*/
+.yuvarlak{ 
+	width: 45px;
+	height: 45px;	   
+	border:  1px solid black;	   
+	border-radius: 50%; 
+	background-color: black;
+	opacity: 0.7;	   
+}
+
+/*resmin üzerine yazı yazmamı sağlayan kodlar (53'e kadar)*/
+.image { 
+ 	position: relative; 
+ 	width: 100% !important;
+ 	
+}
+.picture{
+	display: block;
+	width: 100%;/*  internet explorer 6 için*/
+	height: auto;
+}
+h4 { 
+	position: absolute; 
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-weight: bold;
+	font-family: comic sans ms;
+	opacity: 0.4;
+	color:deeppink;
+}
+/*h4:hover{opacity: 1; color:#ff0093;}*/
+
+/* OVERLAY*/
+
+.overlay{
+	position: absolute;
+	bottom: 100%;
+	left: 0;
+	right: 0;
+	overflow: hidden;
+	width: 100%;
+	height: 0;
+	transition: .4s ease;
+	background-color: white;
+	opacity: 0.75;
+}
+.content-text{
+	color: deeppink;
+	font-size: 28px;
+	position: absolute;
+	overflow: hidden;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	white-space: nowrap;
+}
+.image:hover .overlay{
+	bottom:0;
+	height: 100%;
+	
+}
+
+/**/
+
+a:link{color:deepskyblue;text-decoration: none; font-size: 14px ; }
+a:visited{color: deepskyblue;}
+a:hover{color: orange;}
+a:active{color: deeppink;}
+
+/*index.php sayfasında yer alan butonlar için css kodu: */
+.buton{
+    background-color:deeppink;
+    opacity: 0.5;
+    border: none;
+    padding: 5px 35px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    color: white;
+  	transition: 0.3s;   
+}
+
+.buton:hover {opacity: 1}
+
+/*Giriş sayfası için konum ayarlama kodları*/
+.kayit{
+		position: absolute;
+		width: 400px;
+		height: 550px;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%); 
+
+		background-color: black;
+		opacity: 0.7;
+		color: white;
+}
+.link{
+	font-size: 28px !important;
+	color: deeppink !important;
+	text-decoration: none !important;
+
+}
